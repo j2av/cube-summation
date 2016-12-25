@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/input', "SummationController@input");
+Route::post('/analyze', "SummationController@analyze");
