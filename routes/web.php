@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect("/input");
 });
 
 Route::get('/input', "SummationController@input");
